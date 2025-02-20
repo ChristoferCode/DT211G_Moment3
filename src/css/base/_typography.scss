@@ -13,60 +13,62 @@ $font-size: 10rem;
 
 .bigheadline {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 14vw;
+    text-decoration: overline;
+    font-size: 13.5vw;
     line-height: 7vw;
     color: rgba(255, 255, 255, 0.9);
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    margin-top: -30vw;
+    margin-top: -22vw;
     -webkit-text-stroke: 2px rgb(255, 255, 255);
-    text-shadow: rgb(255, 0, 0) 1px 1px 20px;
+    text-shadow: rgb(255, 102, 245) 1px 1px 20px;
     text-transform: uppercase;
 }
 
 .bigheadline2 {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 7vw;
+    text-decoration: underline;
+    font-size: 7.2vw;
     line-height: 7vw;
     color: rgba(255, 255, 255, 0.9);
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    margin-top: -7vw;
+    margin-top: -10vw;
     -webkit-text-stroke: 2px rgb(255, 255, 255);
-    text-shadow: rgb(255, 0, 0) 1px 1px 20px;
+    text-shadow: rgb(255, 102, 245) 1px 1px 20px;
 }
 
 #footertext {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
-    max-width: 450px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #name {
-    color: rgb(64, 255, 191);
+    color: rgb(94, 252, 247);
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Helvetica, Arial, sans-serif;
     font-size: 2.4rem;
     line-height: 3.6rem;
     text-align: left;
-    color: rgb(0, 0, 0, 0.8);
+    color:  rgb(57, 7, 63);
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
 .brodtext {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: left;
@@ -76,7 +78,7 @@ h2 {
 }
 
 .brodtext2 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: left;
