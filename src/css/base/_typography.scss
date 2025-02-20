@@ -1,0 +1,37 @@
+$font-size: 10rem;
+
+.bigheadline {
+    font-size: $font-size;
+    color: rgb(57, 7, 63);
+
+}
+
+#start {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+}
+
+#headertext {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#footertext {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name {
+    color: rgb(64, 255, 191);
+}
