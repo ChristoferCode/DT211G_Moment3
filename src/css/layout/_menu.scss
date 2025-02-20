@@ -1,0 +1,266 @@
+#menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;   
+}
+
+.link {
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    text-wrap: nowrap;
+
+}
+
+.linkbutton {
+    background-image: url("../images/bokeh.jpg");
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.linkbutton:hover, .linkbutton:focus {
+    box-shadow: rgb(255, 255, 255) 0px 2px 8px;
+    transform: translateY(-3px);
+    cursor: pointer;
+    text-shadow: rgb(255, 255, 255) 0px 2px 8px; 
+    background-image: url("../images/bokeh.jpg");
+    background-size: cover;
+}
+
+
+
+
+#open-menu {
+    background-color: rgb(57, 7, 63);
+    padding: 5px 10px 10px 10px;
+    margin: 0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    justify-content: space-between;
+    width: 100px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#close-menu {
+    background-color: rgb(57, 7, 63);
+    padding: 5px 10px 10px 10px;
+    margin: 0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    justify-content: space-between;
+    width: 100px;
+    height: 45px;
+}
+
+.menutextopen {
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+.menutextclose {
+    color: rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    #open-menu {
+        padding: 5px 10px 10px 10px;
+        margin: 0;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        height: 45px;
+        margin-left: auto;
+        margin-right: 20px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        animation-name: hamburgerborder;
+        animation-duration: 1s;
+        animation-fill-mode:both;
+        animation-play-state: paused;
+        animation-direction: normal;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style-type: none;
+        margin-left: -20px;
+        margin-right: 20px;
+        padding-top: 10px;
+        animation: showmenu;
+        animation-play-state: paused;
+        animation-duration: 1s;
+        transition: all ease-in-out;
+    }
+
+    #close-menu {
+        padding: 5px 10px 10px 10px;
+        margin: 0;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        cursor: pointer;
+        display: none;
+        justify-content: space-between;
+        width: 100px;
+        height: 45px;
+        margin-left: auto;
+        margin-right: 20px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        animation-name: hamburgerborderclose;
+        animation-duration: 1s;
+        animation-fill-mode:both;
+        animation-play-state: paused;
+        animation-direction: normal;
+    }
+
+    .menutextopen {
+        color: rgb(255, 255, 255);
+        font-family:'Courier New', Courier, monospace;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: block;
+        animation-name: hamburgertext;
+        animation-duration: 1s;
+        animation-fill-mode:both;
+        animation-play-state: paused;
+        animation-direction: normal;
+    }
+
+    .menutextclose {
+        color: rgb(255, 255, 255);
+        font-family:'Courier New', Courier, monospace;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        animation-name: hamburgertextclose;
+        animation-duration: 1s;
+        animation-fill-mode:both;
+        animation-play-state: paused;
+        animation-direction: normal;
+    }
+
+    @keyframes showmenu {
+        from {
+            transform: translateY(400px);
+        }
+    
+        to {
+            transform: translateY(0px);
+        }
+     }
+
+     @keyframes hidemenu {
+        0% {
+            transform: translateY(0px);
+        }
+    
+        100% {
+            transform: translateY(400px);
+        }
+     }
+
+    @keyframes hamburgerborder {
+        from {
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+        to {
+            border: 2px solid rgb(255, 255, 255);
+        }
+    }
+
+    @keyframes hamburgerborderhover {
+        from {
+            box-shadow: rgb(255, 255, 255) 0px 2px 8px;  
+        }
+
+        to {
+            box-shadow: rgb(255, 255, 255) 0px 2px 8px;  
+        }
+    }
+
+
+    @keyframes hamburgerborderclose {
+        from {
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+        to {
+            border: 2px solid rgb(255, 255, 255);
+        }
+    }
+
+
+    @keyframes hamburgerborderclosehover {
+        from {
+            box-shadow: rgb(255, 255, 255) 0px 2px 8px;  
+        }
+
+        to {
+            box-shadow: rgb(255, 255, 255) 0px 2px 8px;  
+        }
+    }
+
+
+    @keyframes hamburgertext {
+        from {
+            color: rgb(255, 255, 255);
+        }
+
+        to {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    @keyframes hamburgertextclose {
+        from {
+            color: rgb(255, 255, 255);
+        }
+
+        to {
+            color: rgb(255, 255, 255);
+        }
+    }
+}

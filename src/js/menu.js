@@ -114,23 +114,31 @@ function closeMenu() {
 function hoverOpen() {
     if (window.getComputedStyle(menuEl).display === "none") {
         openMenuEl.style.boxShadow ="0px 2px 8px white";
+        openMenuEl.style.textShadow ="0px 2px 8px white";
+
     } else {
-        openMenuEl.style.boxShadow ="0px 2px 8px red";
+        openMenuEl.style.boxShadow ="0px 2px 8px white";
+        openMenuEl.style.textShadow ="0px 2px 8px white";
     }   
 }
 
 function hoverClose() {
    if (window.getComputedStyle(openMenuEl).display === "none") {
         closeMenuEl.style.boxShadow ="0px 2px 8px white";
+        openMenuEl.style.textShadow ="0px 2px 8px white";
     } else {
-        closeMenuEl.style.boxShadow ="0px 2px 8px red";
+        closeMenuEl.style.boxShadow ="0px 2px 8px white";
+        openMenuEl.style.textShadow ="0px 2px 8px white";
     }
 }
 
 function hoverOpen2() {
     openMenuEl.style.boxShadow ="none";
+    openMenuEl.style.textShadow ="none";
+
 }
     
 function hoverClose2() {
     closeMenuEl.style.boxShadow ="none";
+    openMenuEl.style.textShadow ="none";
 }
