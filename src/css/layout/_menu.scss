@@ -45,7 +45,7 @@
 }
 
 #open-menu {
-    background-color: rgb(57, 7, 63);
+    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
     padding: 5px 10px 10px 10px;
     margin: 0;
     border: 2px solid rgb(255, 255, 255);
@@ -53,7 +53,7 @@
     cursor: pointer;
     display: none;
     justify-content: space-between;
-    width: 100px;
+    width: 160px;
     height: 45px;
     margin-left: auto;
     margin-right: 20px;
@@ -62,7 +62,7 @@
 }
 
 #close-menu {
-    background-color: rgb(57, 7, 63);
+    background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
     padding: 5px 10px 10px 10px;
     margin: 0;
     border: 2px solid rgb(255, 255, 255);
@@ -70,7 +70,7 @@
     cursor: pointer;
     display: none;
     justify-content: space-between;
-    width: 100px;
+    width: 160px;
     height: 45px;
 }
 
@@ -185,12 +185,13 @@
         cursor: pointer;
         display: flex;
         justify-content: space-between;
-        width: 100px;
+        width: 160px;
         height: 45px;
         margin-left: auto;
         margin-right: auto;
         margin-top: -10px;
         margin-bottom: 10px;
+
         animation-name: hamburgerborder;
         animation-duration: 1s;
         animation-fill-mode:both;
@@ -208,6 +209,7 @@
         margin-left: -20px;
         margin-right: 20px;
         padding-top: 10px;
+
         animation: showmenu;
         animation-play-state: paused;
         animation-duration: 1s;
@@ -222,12 +224,13 @@
         cursor: pointer;
         display: none;
         justify-content: space-between;
-        width: 100px;
+        width: 160px;
         height: 45px;
         margin-left: auto;
         margin-right: auto;
         margin-top: -10px;
         margin-bottom: 10px;
+
         animation-name: hamburgerborderclose;
         animation-duration: 1s;
         animation-fill-mode:both;
@@ -244,6 +247,7 @@
         margin-top: auto;
         margin-bottom: auto;
         display: block;
+
         animation-name: hamburgertext;
         animation-duration: 1s;
         animation-fill-mode:both;
@@ -260,12 +264,27 @@
         margin-top: auto;
         margin-bottom: auto;
         display: flex;
+        
         animation-name: hamburgertextclose;
         animation-duration: 1s;
         animation-fill-mode:both;
         animation-play-state: paused;
         animation-direction: normal;
     }
+
+    // .linkbutton {
+    //     background-image: linear-gradient(to right, rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131));
+    //     padding: 5px 20px;
+    //     border-radius: 10px;
+    //     border: 2px solid rgb(255, 255, 255);
+    // }
+
+    // .activelinkbutton {
+    //     @extend .linkbutton;
+    //     border: 2px solid rgb(255, 102, 245);
+    //     background-image: url("../images/bokeh.jpg");
+    //     background-size: cover;
+    // }
 
     @keyframes showmenu {
         from {
