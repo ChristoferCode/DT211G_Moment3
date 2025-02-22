@@ -6,7 +6,9 @@
     margin-bottom: 30px;
 }
 
-%boxsize {
+//Testar använding av placeholder och @extend (selector inheritance) och testar olika Color functions. Testar också mixins med if/else-sats.
+
+@mixin boxsize($circle: true) {
     width: 100px;
     height: 100px;
     display: flex;
@@ -14,6 +16,12 @@
     justify-content: center;
     text-align: center;
     border: 2px solid rgb(255, 255, 255);
+
+    @if $circle {
+        border-radius: 50%;
+    } @else {
+        border-radius: 0%;
+    }
 }
 
 %boxfont {
@@ -23,38 +31,38 @@
 }
 
 #color {
-    @extend %boxsize;
+    @include boxsize($circle: false);
     @extend %boxfont;
  
     background-color: green;
 }
 
 #color2 {
-    @extend %boxsize;
+    @include boxsize($circle: false);
     @extend %boxfont;
     background-color: lighten( green, 20%);
 }
 
 #color3 {
-    @extend %boxsize;
+    @include boxsize($circle: true);
     @extend %boxfont;
     background-color: darken( green, 20%);
 }
 
 #color4 {
-    @extend %boxsize;
+    @include boxsize($circle: true);
     @extend %boxfont;
     background-color: saturate( green, 50%);
 }
 
 #color5 {
-    @extend %boxsize;
+    @include boxsize($circle: false);
     @extend %boxfont;
     background-color: desaturate( green, 50%);
 }
 
 #color6 {
-    @extend %boxsize;
+    @include boxsize($circle: false);
     @extend %boxfont;
     background-color: complement( green);
 }

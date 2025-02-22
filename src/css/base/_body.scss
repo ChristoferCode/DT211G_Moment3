@@ -1,9 +1,20 @@
 @use "../abstracts/variables" as *;
 
+//Testar använding av placeholder och @extend (selector inheritance) inom samma scss-fil (eftersom Parcel kraschar när de barta ligger i min _variables.scss)
+
+
 %default {
     margin: 0;
     padding: 0;
 }
+
+//Testar variabler inom samma scss-fil (eftersom Parcel kraschar när de barta ligger i min _variables.scss)
+@mixin centerObject($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+
 
 html {
     font-size: 62.5%;
@@ -11,7 +22,7 @@ html {
 }
 
 body {
-    background-color: rgb(217, 102, 255);
+    background-color: $bodybg-color-light;
     @extend %default;
     background-image: url("../images/bokeh.jpg");
     background-attachment: fixed;
@@ -23,8 +34,7 @@ body {
 #startcontainer {
     box-shadow: rgb(0, 0, 0, 0.5) 4px 4px 8px;
     width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
+    @include centerObject(auto);
     max-width: 1000px;
     border-radius: 50px 50px 40px 40px;   
     background-image: linear-gradient(rgb(57, 7, 63), rgb(119, 14, 131) , rgb(202, 28, 222), rgb(119, 14, 131), rgb(57, 7, 63));
@@ -37,15 +47,13 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    @include centerObject(auto);
 }
 
 #main {
-    background-color: rgb(255, 255, 255);
+    background-color: $mainbg-color-light;
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    @include centerObject(auto);
     border-radius: 30px 30px 30px 30px; 
 }
 

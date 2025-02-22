@@ -1,4 +1,9 @@
+//Testar användning av partials men Parcel kraschar bara när jag enbart har dem här...dock funkar ju att enbart ha denna filen länkad i mina HTML-filer.
+
+
+@use "abstracts/functions";
 @use "abstracts/mixins";
+@use "abstracts/placeholders";
 @use "abstracts/variables" as *;
 
 @use "base/body";
@@ -15,8 +20,10 @@
 @use "layout/main";
 @use "layout/menu";
 
+@use "pages/about";
 @use "pages/color";
 @use "pages/contact";
+@use "pages/sass2";
 @use "pages/start";
 
 @use "themes/dark";
