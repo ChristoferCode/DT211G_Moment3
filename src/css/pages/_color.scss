@@ -1,0 +1,58 @@
+#colorboxes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+%boxsize {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+%boxfont {
+    font-family: "Agu Display", serif;
+    font-size: 5.0rem;
+    color: rgb(255, 255, 255);
+}
+
+#color {
+    @extend %boxsize;
+    @extend %boxfont;
+ 
+    background-color: green;
+}
+
+#color2 {
+    @extend %boxsize;
+    @extend %boxfont;
+    background-color: lighten( green, 20%);
+}
+
+#color3 {
+    @extend %boxsize;
+    @extend %boxfont;
+    background-color: darken( green, 20%);
+}
+
+#color4 {
+    @extend %boxsize;
+    @extend %boxfont;
+    background-color: saturate( green, 50%);
+}
+
+#color5 {
+    @extend %boxsize;
+    @extend %boxfont;
+    background-color: desaturate( green, 50%);
+}
+
+#color6 {
+    @extend %boxsize;
+    @extend %boxfont;
+    background-color: complement( green);
+}

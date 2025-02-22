@@ -16,11 +16,23 @@
     text-wrap: nowrap;
 }
 
+.activelink {
+    @extend .link;
+    color:rgb(57, 7, 63);
+
+}
+
 .linkbutton {
     background-image: url("../images/bokeh.jpg");
     padding: 5px 20px;
     border-radius: 10px;
     border: 2px solid rgb(255, 255, 255);
+}
+
+.activelinkbutton {
+    @extend .linkbutton;
+    border: 2px solid rgb(255, 102, 245);
+    background-size: cover;
 }
 
 .linkbutton:hover, .linkbutton:focus {
@@ -31,9 +43,6 @@
     background-image: url("../images/bokeh.jpg");
     background-size: cover;
 }
-
-
-
 
 #open-menu {
     background-color: rgb(57, 7, 63);
@@ -101,7 +110,7 @@
         width: 100px;
         height: 45px;
         margin-left: auto;
-        margin-right: 20px;
+        margin-right: auto;
         margin-top: -10px;
         margin-bottom: 10px;
         animation-name: hamburgerborder;
@@ -138,7 +147,7 @@
         width: 100px;
         height: 45px;
         margin-left: auto;
-        margin-right: 20px;
+        margin-right: auto;
         margin-top: -10px;
         margin-bottom: 10px;
         animation-name: hamburgerborderclose;

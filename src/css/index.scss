@@ -7,12 +7,15 @@
 
 @use "components/buttons";
 @use "components/images";
+@use "components/links";
 @use "components/logos";
 
 @use "layout/footer";
 @use "layout/header";
+@use "layout/main";
 @use "layout/menu";
 
+@use "pages/color";
 @use "pages/contact";
 @use "pages/start";
 

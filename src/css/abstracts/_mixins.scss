@@ -1,0 +1,11 @@
+
+@mixin square($size, $radius) {
+    width: $size;
+    height: $size;
+    border-radius: $radius;
+}
+
+@mixin centerobject($auto) {
+    margin-left: $auto;
+    margin-right: $auto;
+}
