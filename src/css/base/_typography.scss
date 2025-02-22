@@ -139,6 +139,34 @@ h2 {
     }
 }
 
+@media only screen and (max-width: 470px) {
+    .bigheadline {
+        font-size: 14.0vw;
+        line-height: 7vw;
+        margin-top: -32vw;    
+    }
+
+    .bigheadline2 {
+        font-size: 7.5vw;
+        line-height: 7vw;
+        margin-top: -13vw;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .bigheadline {
+        font-size: 14.0vw;
+        line-height: 7vw;
+        margin-top: -33vw;    
+    }
+
+    .bigheadline2 {
+        font-size: 7.5vw;
+        line-height: 7vw;
+        margin-top: -14vw;
+    }
+}
+
 @media only screen and (min-width: 1235px) {
     .bigheadline {
         font-size: 16.8rem;
