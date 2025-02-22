@@ -55,3 +55,14 @@ body {
     margin-right: auto;
     border-radius: 30px 30px 30px 30px;   
 }
+
+
+@media only screen and (max-width: 470px) {
+    #startcontainer {
+        width: 90vw;
+    }
+
+    #startcontainer2 {
+        width: 90vw;
+    }
+}

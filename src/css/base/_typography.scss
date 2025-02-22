@@ -21,7 +21,7 @@ $font-size: 10rem;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    margin-top: -22vw;
+    margin-top: -22.5vw;
     -webkit-text-stroke: 2px rgb(255, 255, 255);
     text-shadow: rgb(255, 102, 245) 1px 1px 20px;
     text-transform: uppercase;
@@ -99,3 +99,61 @@ h2 {
     margin-bottom: auto;
     display: block;
 }
+
+
+@media only screen and (max-width: 840px) {
+    .bigheadline {
+        font-size: 13.0vw;
+        line-height: 7vw;
+        margin-top: -23vw;    
+    }
+
+    .bigheadline2 {
+        font-size: 6.9vw;
+        line-height: 7vw;
+        margin-top: -11vw;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .bigheadline {
+        font-size: 13.0vw;
+        line-height: 7vw;
+        margin-top: -25vw;    
+    }
+
+    .bigheadline2 {
+        font-size: 6.9vw;
+        line-height: 7vw;
+        margin-top: -12vw;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .bigheadline {
+        font-size: 12.5vw;
+        line-height: 7vw;
+        margin-top: -25vw;    
+    }
+
+    .bigheadline2 {
+        font-size: 6.6vw;
+        line-height: 7vw;
+        margin-top: -13vw;
+    }
+}
+
+@media only screen and (min-width: 1235px) {
+    .bigheadline {
+        font-size: 16.8rem;
+        line-height: 8.5rem;
+        margin-top: -272px;
+    }
+
+    .bigheadline2 {
+        font-size: 9.0rem;
+        line-height: 9.0rem;
+        margin-top: -125px;
+    }
+}
+
