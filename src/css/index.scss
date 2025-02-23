@@ -1,10 +1,10 @@
-//Testar användning av partials men Parcel kraschar bara när jag enbart har dem här...dock funkar ju att enbart ha denna filen länkad i mina HTML-filer.
+//Samlar här alla mina partials. Ibland kraschar Parcel när jag enbart har dem här...dock funkar ju att enbart ha denna filen länkad i mina HTML-filer.
 
 
 @use "abstracts/functions";
 @use "abstracts/mixins";
 @use "abstracts/placeholders";
-@use "abstracts/variables" as *;
+@use "abstracts/variables";
 
 @use "base/body";
 @use "base/reset";

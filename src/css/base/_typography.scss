@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as *;
 
-//Testar variabler inom samma scss-fil (eftersom Parcel kraschar när de barta ligger i min _variables.scss)
+//Testar variabler inom samma scss-fil och ifrån extern fil
 $font-stack1: Helvetica, Arial, sans-serif;
 $font-stack2: 'Courier New', Courier, monospace;
 
